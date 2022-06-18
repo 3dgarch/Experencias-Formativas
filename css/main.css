@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: arial,sans-serif;
+    font-size: 62.5%;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Nav*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #2C3E50 ;
+    padding: 16px;
+    
+}
+nav .logo{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+nav span{
+    font-size: .5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+nav ul a{
+    font-size: 1.5em;
+    margin-left: 50px;
+}
+nav ul a:hover{
+    border-bottom: 1px solid;
+}
+
+
+/* section carrusel*/
+section img{
+    width: 100%;
+    height: 500px;
+}
+section .content{
+    position: absolute;
+    top: 50%;
+    left: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+.content p {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.content h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.content button{
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    background: #A9CCE3 ;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*destinos*/
+section{
+    background: #E5E7E9 ;
+}
+.destinos h1{
+    text-align: center;
+    color: #229954 ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 100px;
+    
+    margin: auto;
+}
+
+section .destinos-items img{
+    width: 100%;
+    height: 250px;
+    transition: all 1s ease;
+}
+section .destinos-items figure{
+    position: relative;
+    overflow: hidden;
+}
+section .items-text{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+section .items-text p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+   
+
+}
+section .items-text i{
+    margin-right: 5px;
+}
+
+
+section .destinos-items img:hover{
+    transform: scale(1.3);
+}
+
+section .destinos-descr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #2C3E50;
+}
+section .destinos-descr button{
+    background: #C0392B ;
+    border: none;
+    color: #fff;
+    padding: 5px 12px;
+    cursor: pointer;
+
+}
+
+/*footer*/
+.footer{
+    background: #2C3E50 ;
+    padding: 25px;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer .social-links i{
+    margin-left: 10px;
+
+}
+footer .social-links i:hover{
+    transform: scale(1.3);
+}

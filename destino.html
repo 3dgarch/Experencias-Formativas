@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/241e0ddee9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <a class="logo" href="./index.html">Peru<span>Travel</span></a>
+      <ul>
+        <a href="./index.html">Inicio</a
+        ><a href="./Nosotros.html">Nosotros</a
+        ><a href="./contactanos.html">Contactanos</a
+        ><a href="#">Blog</a>
+      </ul>
+    </nav>
+    <section>
+        <div class="contenedor">
+            <div class="btn-left boton" onclick="carrousel('atras')">
+                &#60
+    
+            </div>
+            <div class="btn-rigth boton" onclick="carrousel('adelante')">
+                &#62
+    
+            </div>
+            <img id="imagen" src="../img/austria.jpg" alt="">
+    
+        </div>
+    </section>
+    <section Class="select">
+        <form class="check">
+            <p>Seleciona tu salida</p>
+            <input type="text" placeholder="ciudad de origen">
+            <select name="select">
+              <option value="value1">2 persconas, habitacion matrimonial</option>
+              <option value="value2" selected>2 personas, 1 habitación</option>
+              <option value="value3">mas de 4 personas</option>
+            </select>
+            <select name="select">
+              <option value="value1">Value 1</option>
+              <option value="value2" selected>10 dias/ 5 noches</option>
+              <option value="value3">Value 3</option>
+            </select>
+            <button>
+              Ver Disponibilidad
+            </button>
+        </form>
+    </section>
+    <section class="info">
+      <div class="info-desc">
+        <a href="">Itinerario</a>
+        <a href="">Alojamientos</a>
+        <a href="">Destino</a>
+      </div>
+      <div class="info-text">
+        <p>Itinerario:
+
+          Día 1: Ciudad de Origen - Buenos Aires
+          Salida en vuelo hacia Buenos Aires. Recepción en el aeropuerto y traslado al hotel seleccionado. Alojamiento.
+          
+          Día 2: Buenos Aires
+          Desayuno. En horas de la mañana salida para realizar el City Tour. Descubriremos la belleza de Buenos Aires conociendo su Centro Cívico; comenzando por el imponente Congreso Nacional y la Plaza de Mayo con la Casa de Gobierno (Casa Rosada), la Catedral Metropolitana y el Cabildo. Transitaremos frente al Teatro Colón, una de las joyas mundiales en lo que a óperas se refiere y orgullo cultural de los porteños. Luego iremos al tradicional barrio de San Telmo cuya mágica atmósfera lo hará retroceder en el tiempo. Nos detendremos en La Boca donde se establecieron los primeros inmigrantes italianos, famosa por su pintoresca y colorida arquitectura. Continuaremos hacia Palermo, barrio residencial con varios atractivos como el Ecoparque, el Parque 3 de Febrero, el Planetario, etc. Finalmente visitaremos La Recoleta, uno de los barrios más exclusivos de la ciudad, donde veremos el famoso cementerio, boutiques elegantes, excelentes restaurantes y cafés al aire libre. Tarde libre. Por la noche recomendamos tomar opcionalmente una cena show de tango. Alojamiento.
+          
+          Día 3: Buenos Aires
+          Desayuno. Día libre. Recomendamos tomar opcionalmente la excursión Tigre y Delta.
+          
+          Día 4: Buenos Aires - El Calafate
+          Desayuno. Salida al aeropuerto local para tomar el vuelo a El Calafate. Recepción en el aeropuerto y traslado al hotel seleccionado. Alojamiento.
+          </p>
+
+      </div>
+      
+
+    </section>
+
+    <footer class="footer">
+      <p>Todos los derechos reservados</p>
+      <div class="social-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </footer>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: arial;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .contenedor {
+        padding: 0 18px;
+        width: 100%;
+        position: relative;
+        height: 500px;
+      }
+      .boton {
+        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        position: absolute;
+        font-weight: bold;
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+      .boton:hover {
+        cursor: pointer;
+        transform: scale(1.2, 1.2);
+      }
+      .btn-left {
+        left: 2%;
+        top: 300px;
+      }
+      .btn-rigth {
+        right: 2%;
+        top: 300px;
+      }
+      .select{
+        padding: 15px;
+      }
+
+      .check{
+        background: #1F618D ;
+        display: flex;
+        justify-content: space-around;
+        padding: 16px;
+        align-items: center;
+      }
+      .check p{
+        font-size: 12px;
+      }
+      .check button{
+        border: none;
+        padding: 6px 12px;
+        border-radius: 60px;
+        background: #C0392B ;
+        color: #fff;
+
+      }
+      .check button:hover{
+        background: #E74C3C  ;
+      }
+      select,
+      input{
+        padding: 6px 12px;
+      }
+      .info{
+        padding: 12px
+      }
+      .info-desc {
+        margin-bottom: 12px;
+       
+      }
+      .info-desc a{
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+        margin-right: 16px;
+
+      }
+      .info-desc a:hover{
+        color: #2874A6;
+        border-bottom: 1px solid #2874A6;
+
+      }
+      .info-text{
+        color: #000;
+        text-align: left;
+        line-height: 19px;
+        width: 30%;
+        height: 80vh;
+      }
+    </style>
+
+    <script src="/destinos.js"></script>
+  </body>
+</html>

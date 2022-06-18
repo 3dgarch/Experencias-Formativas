@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: arial,sans-serif;
+    font-size: 62.5%;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Nav*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #2C3E50 ;
+    padding: 16px;
+    
+}
+nav .logo{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+nav span{
+    font-size: .5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+nav ul a{
+    font-size: 1.5em;
+    margin-left: 50px;
+}
+nav ul a:hover{
+    border-bottom: 1px solid;
+}
+
+
+
+/*footer*/
+.footer{
+    background: #2C3E50 ;
+    padding: 25px;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer .social-links i{
+    margin-left: 10px;
+
+}
+footer .social-links i:hover{
+    transform: scale(1.3);
+}
